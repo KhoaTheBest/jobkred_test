@@ -1,0 +1,21 @@
+{
+  "name": "predict_job",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Khoa Le",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.16.2",
+    "js-combinatorics": "^0.5.3",
+    "line-reader": "^0.4.0",
+    "markdown-js": "0.0.3",
+    "spell": "^1.0.0",
+    "sqlite": "^2.9.1"
+  },
+  "devDependencies": {}
+}
