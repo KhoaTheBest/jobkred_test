@@ -13,12 +13,12 @@ module.exports = function(callback) {
                 Promise
             });
         }) // Update db schema 
-        // .then(() => db.migrate({
-        //     force: 'last'
-        // }))
+        .then(() => db.migrate({
+            force: 'last'
+        }))
         .then(() => {
             lineReader.eachLine('clean_job_titles.md', (line, last) => {
-                // db.run("INSERT INTO Job (name) VALUES (?)", line);
+                db.run("INSERT INTO Job (name) VALUES (?)", line);
                 dist.prepareDicts(line);
             });
         }) // Display error message 
